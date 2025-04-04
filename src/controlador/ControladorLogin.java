@@ -14,7 +14,7 @@ public class ControladorLogin implements ActionListener{
     public ControladorLogin(ModeloLogin modelo) {
         this.modelo = modelo;
     }
-
+    //esto se comenta para prueba de GIT
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals(modelo.getVistaLogin().btnIngresar.getActionCommand())) {
@@ -46,7 +46,9 @@ public class ControladorLogin implements ActionListener{
         modelo.getVistaLogin().txtUsuario.setText("");
         modelo.getVistaLogin().txtPassword.setText("");
     }
-    
+    public void limpiarCampos2(){
+        
+    }
     
     
 }
