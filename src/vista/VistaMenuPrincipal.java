@@ -36,7 +36,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         btnSumVectores = new javax.swing.JButton();
         btnHipotenusa = new javax.swing.JButton();
         btnSumVectores2 = new javax.swing.JButton();
-        btnSumVectores3 = new javax.swing.JButton();
+        bntConversiones = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,14 +71,14 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         btnSumVectores2.setAlignmentX(0.5F);
         btnSumVectores2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 
-        btnSumVectores3.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
-        btnSumVectores3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-medida-60.png"))); // NOI18N
-        btnSumVectores3.setText("Conversiones");
-        btnSumVectores3.setToolTipText("");
-        btnSumVectores3.setActionCommand("   Conversiones");
-        btnSumVectores3.setAlignmentX(0.5F);
-        btnSumVectores3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnSumVectores3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        bntConversiones.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        bntConversiones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-medida-60.png"))); // NOI18N
+        bntConversiones.setText("Conversiones");
+        bntConversiones.setToolTipText("");
+        bntConversiones.setActionCommand("   Conversiones");
+        bntConversiones.setAlignmentX(0.5F);
+        bntConversiones.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bntConversiones.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -88,11 +88,10 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btnSumVectores2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSumVectores3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnHipotenusa, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSumVectores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btnSumVectores2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bntConversiones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnHipotenusa, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSumVectores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -105,7 +104,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnHipotenusa)
                 .addGap(18, 18, 18)
-                .addComponent(btnSumVectores3)
+                .addComponent(bntConversiones)
                 .addGap(18, 18, 18)
                 .addComponent(btnSumVectores2)
                 .addContainerGap(28, Short.MAX_VALUE))
@@ -167,15 +166,16 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton bntConversiones;
     public javax.swing.JButton btnHipotenusa;
     public javax.swing.JButton btnSumVectores;
     public javax.swing.JButton btnSumVectores2;
-    public javax.swing.JButton btnSumVectores3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
     public void setControlador(ControladorMenuprincipal c){
         btnSumVectores.addActionListener(c);
         btnHipotenusa.addActionListener(c);
+        bntConversiones.addActionListener(c);
     }
 }
