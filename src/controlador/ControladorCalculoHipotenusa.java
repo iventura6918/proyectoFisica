@@ -35,7 +35,7 @@ public class ControladorCalculoHipotenusa implements ActionListener {
                 double result = calculoDosLados(ladoA, ladoB);
                 String resultRedondeado = String.format("%.2f", result);
 
-                modelohipo.getVistaHipo().lblResultado.setText(resultRedondeado);
+                modelohipo.getVistaHipo().lblResultado.setText(resultRedondeado + "Metros");
             }
 
         }
