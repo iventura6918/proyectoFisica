@@ -4,6 +4,9 @@
  */
 package vista;
 
+import controlador.ControladorSumaVectores;
+import modelo.ModeloSumaVectores;
+
 /**
  *
  * @author iventura
@@ -15,6 +18,9 @@ public class VistaSumaVectores extends javax.swing.JFrame {
      */
     public VistaSumaVectores() {
         initComponents();
+        ModeloSumaVectores modelo = new ModeloSumaVectores(this);
+        ControladorSumaVectores controlador = new ControladorSumaVectores(modelo);
+        setControlador(controlador);
         this.setLocationRelativeTo(null);
     }
 
@@ -60,8 +66,10 @@ public class VistaSumaVectores extends javax.swing.JFrame {
         jLabel4.setText("Datos del segundo vector:");
 
         txtX1.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        txtX1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         txtY1.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        txtY1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel5.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
         jLabel5.setText("Datos del primer vector:");
@@ -76,11 +84,13 @@ public class VistaSumaVectores extends javax.swing.JFrame {
         jLabel8.setText("(");
 
         txtX2.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        txtX2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel9.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel9.setText(",");
 
         txtY2.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        txtY2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel10.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel10.setText(")");
@@ -132,8 +142,7 @@ public class VistaSumaVectores extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(txtY2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                        .addComponent(jLabel10)))
                                 .addGap(115, 115, 115)
                                 .addComponent(bntAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(14, 14, 14)))
@@ -250,8 +259,8 @@ public class VistaSumaVectores extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bntAtras;
-    private javax.swing.JButton btnSuma;
+    public javax.swing.JButton bntAtras;
+    public javax.swing.JButton btnSuma;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel3;
@@ -268,4 +277,8 @@ public class VistaSumaVectores extends javax.swing.JFrame {
     public javax.swing.JTextField txtY1;
     public javax.swing.JTextField txtY2;
     // End of variables declaration//GEN-END:variables
+    public void setControlador(ControladorSumaVectores c){
+        btnSuma.addActionListener(c);
+        bntAtras.addActionListener(c);
+    }
 }

@@ -174,7 +174,7 @@
         <Component class="javax.swing.JTextField" name="txtLadoB">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Courier New" size="14" style="0"/>
+              <Font name="Courier New" size="18" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
@@ -201,7 +201,7 @@
         <Component class="javax.swing.JTextField" name="txtLadoA">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Courier New" size="14" style="0"/>
+              <Font name="Courier New" size="18" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
@@ -250,7 +250,7 @@
         <Component class="javax.swing.JTextField" name="txtLadoH">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Courier New" size="14" style="0"/>
+              <Font name="Courier New" size="18" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>

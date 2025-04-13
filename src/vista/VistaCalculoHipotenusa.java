@@ -67,7 +67,7 @@ public class VistaCalculoHipotenusa extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
         jLabel3.setText("Longitud del lado a:");
 
-        txtLadoB.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        txtLadoB.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         txtLadoB.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel4.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
@@ -76,7 +76,7 @@ public class VistaCalculoHipotenusa extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
         jLabel5.setText("Longitud del lado b:");
 
-        txtLadoA.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        txtLadoA.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         txtLadoA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel6.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
@@ -91,7 +91,7 @@ public class VistaCalculoHipotenusa extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
         jLabel7.setText("Longitud del lado h:");
 
-        txtLadoH.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        txtLadoH.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         txtLadoH.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel8.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
