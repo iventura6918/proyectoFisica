@@ -37,7 +37,8 @@ public class ControladorSumaVectores implements ActionListener{
         int sAbcisa = x1 + x2;
         int sOrdenada = y1 + y2;
         
-        modeloSum.getVistaSumaV().lblResultadoSuma.setText("( "+sAbcisa+" , "+sOrdenada+" )");   
+        modeloSum.getVistaSumaV().lblResultadoSuma.setText("( "+sAbcisa+" , "+sOrdenada+" )");  
+        
     }
     
     public void salir(){
