@@ -22,6 +22,14 @@ public class ControladorConversiones implements ActionListener {
         if (e.getActionCommand().equals(modeloCon.getVistaCon().btnCalcularCM.getActionCommand())) {
             calculoMetrosCM();
         }
+          if (e.getActionCommand().equals(modeloCon.getVistaCon().btnPulgadaCm.getActionCommand())) {
+            verDialogoPulgadaCM();
+
+        }
+        if (e.getActionCommand().equals(modeloCon.getVistaCon().btnpulgadaDos.getActionCommand())) {
+            calculoPulgadaCm();
+        }
+        
     }
 
     public void verDialogoMetrosCM() {
@@ -40,5 +48,21 @@ public class ControladorConversiones implements ActionListener {
         modeloCon.getVistaCon().lblResultadoCentimetros.setText(conversion + " CM");
 
     }
+    
+    public void calculoPulgadaCm(){
+    double pulgada = Double.parseDouble(modeloCon.getVistaCon().txtPulgada.getText());
+     double conversionDos =  pulgada * 2.54;
+     
+     modeloCon.getVistaCon().lblResultadoPulgadas.setText(conversionDos + " CM");
+    }
+     public void verDialogoPulgadaCM() {
+        modeloCon.getVistaCon().txtPulgada.setText("");
+        modeloCon.getVistaCon().lblResultadoPulgadas.setText("");
+        JDialog dialogo = modeloCon.getVistaCon().dialogoPulgadaCm;
+        dialogo.pack();
+        dialogo.setLocationRelativeTo(null);
+        dialogo.setVisible(true);
+    }
+
 
 }

@@ -39,8 +39,15 @@ public class VIstaConversiones extends javax.swing.JFrame {
         txtMetros = new javax.swing.JTextField();
         btnCalcularCM = new javax.swing.JButton();
         lblResultadoCentimetros = new javax.swing.JLabel();
+        dialogoPulgadaCm = new javax.swing.JDialog();
+        lblResultadoPulgadas = new javax.swing.JLabel();
+        txtPulgada = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        btnpulgadaDos = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        btnPulgadaCm = new javax.swing.JButton();
         btnMetrosaCm = new javax.swing.JButton();
 
         jLabel5.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
@@ -101,6 +108,63 @@ public class VIstaConversiones extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        lblResultadoPulgadas.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        lblResultadoPulgadas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultadoPulgadas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        txtPulgada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPulgadaActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        jLabel4.setText("pulgadas");
+
+        btnpulgadaDos.setText("Calcular");
+        btnpulgadaDos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnpulgadaDosActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Pulgadas a centimetros");
+        jLabel7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout dialogoPulgadaCmLayout = new javax.swing.GroupLayout(dialogoPulgadaCm.getContentPane());
+        dialogoPulgadaCm.getContentPane().setLayout(dialogoPulgadaCmLayout);
+        dialogoPulgadaCmLayout.setHorizontalGroup(
+            dialogoPulgadaCmLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoPulgadaCmLayout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addGroup(dialogoPulgadaCmLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblResultadoPulgadas, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(dialogoPulgadaCmLayout.createSequentialGroup()
+                        .addComponent(txtPulgada, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(btnpulgadaDos)))
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+        dialogoPulgadaCmLayout.setVerticalGroup(
+            dialogoPulgadaCmLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoPulgadaCmLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addGroup(dialogoPulgadaCmLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtPulgada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4)
+                    .addComponent(btnpulgadaDos))
+                .addGap(18, 18, 18)
+                .addComponent(lblResultadoPulgadas, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(10, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -109,6 +173,13 @@ public class VIstaConversiones extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CONVERSIONES");
         jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnPulgadaCm.setText("Pulgadas a Centrimetros");
+        btnPulgadaCm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPulgadaCmActionPerformed(evt);
+            }
+        });
 
         btnMetrosaCm.setText("Longitudes - Metros a Centimetros");
         btnMetrosaCm.addActionListener(new java.awt.event.ActionListener() {
@@ -123,21 +194,29 @@ public class VIstaConversiones extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPulgadaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnMetrosaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(btnMetrosaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(16, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnMetrosaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addGap(92, 92, 92)
+                .addComponent(btnPulgadaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(145, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(73, 73, 73)
+                    .addComponent(btnMetrosaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(215, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -160,13 +239,25 @@ public class VIstaConversiones extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnMetrosaCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMetrosaCmActionPerformed
+    private void btnPulgadaCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPulgadaCmActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnMetrosaCmActionPerformed
+    }//GEN-LAST:event_btnPulgadaCmActionPerformed
 
     private void btnCalcularCMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularCMActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCalcularCMActionPerformed
+
+    private void btnMetrosaCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMetrosaCmActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMetrosaCmActionPerformed
+
+    private void btnpulgadaDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpulgadaDosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnpulgadaDosActionPerformed
+
+    private void txtPulgadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPulgadaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPulgadaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,16 +297,25 @@ public class VIstaConversiones extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnCalcularCM;
     public javax.swing.JButton btnMetrosaCm;
+    public javax.swing.JButton btnPulgadaCm;
+    public javax.swing.JButton btnpulgadaDos;
     public javax.swing.JDialog dialogoMetros;
+    public javax.swing.JDialog dialogoPulgadaCm;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JLabel lblResultadoCentimetros;
+    public javax.swing.JLabel lblResultadoPulgadas;
     public javax.swing.JTextField txtMetros;
+    public javax.swing.JTextField txtPulgada;
     // End of variables declaration//GEN-END:variables
     public void setControlador(ControladorConversiones c){
-        btnMetrosaCm.addActionListener(c);
+        btnPulgadaCm.addActionListener(c);
         btnCalcularCM.addActionListener(c);
+        btnMetrosaCm.addActionListener(c);
+        btnpulgadaDos.addActionListener(c);
     }
 }

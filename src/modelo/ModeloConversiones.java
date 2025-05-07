@@ -8,6 +8,7 @@ public class ModeloConversiones {
     VIstaConversiones vistaCon;
     double metros;
     double centimetros;
+    double pulgadas;
 
     public ModeloConversiones() {
     }
@@ -38,6 +39,14 @@ public class ModeloConversiones {
 
     public void setCentimetros(double centimetros) {
         this.centimetros = centimetros;
+    }
+
+    public double getPulgadas() {
+        return pulgadas;
+    }
+
+    public void setPulgadas(double pulgadas) {
+        this.pulgadas = pulgadas;
     }
     
     
