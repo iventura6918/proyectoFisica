@@ -3,6 +3,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JDialog;
 import modelo.ModeloMRU;
 
 
@@ -15,7 +16,15 @@ public class ControladorMRU implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+        if (e.getActionCommand().equals(modeloMRU.getVistaMRU().btnMruTiempo.getActionCommand())) {
+            verDialogoTiempo();
+        }
+        if (e.getActionCommand().equals(modeloMRU.getVistaMRU().btnMruDistancia.getActionCommand())) {
+            verDialogoDistancia();
+        }
+        if (e.getActionCommand().equals(modeloMRU.getVistaMRU().btnMruVelocidad.getActionCommand())) {
+            verDialogoVelocidad();
+        }
     }
     
     
@@ -38,6 +47,33 @@ public class ControladorMRU implements ActionListener {
      double tiempo = Double.parseDouble(modeloMRU.getVistaMRU().txtTiempoV.getText());
      double velocidad = distancia/tiempo;
      modeloMRU.getVistaMRU().lblResultadoVelocidad.setText(velocidad + "Metros/Segundos");
+ }
+
+ public void verDialogoTiempo(){
+     modeloMRU.getVistaMRU().txtDistaciaT.setText("");
+     modeloMRU.getVistaMRU().txtVelocidadT.setText("");
+     JDialog dlg = modeloMRU.getVistaMRU().dlgTiempo;
+     dlg.pack();
+     dlg.setLocationRelativeTo(null);
+     dlg.setVisible(true);
+ }
+ 
+ public void verDialogoDistancia(){
+     modeloMRU.getVistaMRU().txtTiempoD.setText("");
+     modeloMRU.getVistaMRU().txtVelocidadD.setText("");
+     JDialog dlg = modeloMRU.getVistaMRU().dlgDistancia;
+     dlg.pack();
+     dlg.setLocationRelativeTo(null);
+     dlg.setVisible(true);
+ }
+ 
+ public void verDialogoVelocidad(){
+     modeloMRU.getVistaMRU().txtDistanciaV.setText("");
+     modeloMRU.getVistaMRU().txtTiempoV.setText("");
+     JDialog dlg = modeloMRU.getVistaMRU().dlgVelocidad;
+     dlg.pack();
+     dlg.setLocationRelativeTo(null);
+     dlg.setVisible(true);
  }
     
    
