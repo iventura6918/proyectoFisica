@@ -27,18 +27,14 @@ public class ControladorMRU implements ActionListener {
         }
         if (e.getActionCommand().equals(modeloMRU.getVistaMRU().btnAtrasMRU.getActionCommand())) {
             atras();
-
         }
         if (e.getSource() == modeloMRU.getVistaMRU().btnCalcularTiempo) {
-            System.out.println("tiempo");
             calculoTiempo();
         }
         if (e.getSource() == modeloMRU.getVistaMRU().btnCalcularDistancia) {
-            System.out.println("distancia");
             calculoDistancia();
         }
         if (e.getSource() == modeloMRU.getVistaMRU().btnCalcularVelocidad) {
-            System.out.println("velocidad");
             calculoVelocidad();
         }
     }
