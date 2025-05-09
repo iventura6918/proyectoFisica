@@ -4,6 +4,8 @@
  */
 package vista;
 
+import controlador.ControladorMRU;
+
 /**
  *
  * @author whiteHat
@@ -352,6 +354,11 @@ public class VIstaMRU extends javax.swing.JFrame {
 
         btnMruDistancia.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
         btnMruDistancia.setText("Calcular Distancia");
+        btnMruDistancia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMruDistanciaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -412,6 +419,10 @@ public class VIstaMRU extends javax.swing.JFrame {
     private void btnCalcularDistanciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularDistanciaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCalcularDistanciaActionPerformed
+
+    private void btnMruDistanciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMruDistanciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMruDistanciaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -482,4 +493,12 @@ public class VIstaMRU extends javax.swing.JFrame {
     public javax.swing.JTextField txtVelocidadD;
     public javax.swing.JTextField txtVelocidadT;
     // End of variables declaration//GEN-END:variables
+public void setControlador(ControladorMRU c){
+   btnCalcularDistancia.addActionListener(c);
+   btnCalcularTiempo.addActionListener(c);
+   btnCalcularVelocidad.addActionListener(c);
+   btnMruDistancia.addActionListener(c);
+   btnMruTiempo.addActionListener(c);
+   btnMruVelocidad.addActionListener(c);
+}
 }
