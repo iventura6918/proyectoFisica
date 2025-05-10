@@ -6,7 +6,9 @@ import java.awt.event.ActionListener;
 import modelo.ModeloMenuPrincipal;
 import vista.VIstaConversiones;
 import vista.VIstaMRU;
+import vista.VIstaSegundaLey;
 import vista.VistaCalculoHipotenusa;
+import vista.VistaPrimeraLey;
 import vista.VistaSumaVectores;
 
 
@@ -33,6 +35,12 @@ public class ControladorMenuprincipal implements ActionListener{
         if (e.getActionCommand().equals(modelomp.getVistamp().btnMRU.getActionCommand())) {
             callVistaMRU();
         }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnPrimeraLey.getActionCommand())) {
+            callVistaPL();
+        }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnSegundaLey.getActionCommand())) {
+            callVistaSL();
+        }
     }
     
     public void callVistaSumaVector(){
@@ -55,5 +63,14 @@ public class ControladorMenuprincipal implements ActionListener{
         vistaMRU.setVisible(true);
         modelomp.getVistamp().dispose();
     }
-    
+    public void callVistaPL(){
+        VistaPrimeraLey vistaPL = new VistaPrimeraLey();
+        vistaPL.setVisible(true);
+        modelomp.getVistamp().dispose();
+    }
+    public void callVistaSL(){
+        VIstaSegundaLey vistaSL = new VIstaSegundaLey();
+        vistaSL.setVisible(true);
+        modelomp.getVistamp().dispose();
+    }
 }
