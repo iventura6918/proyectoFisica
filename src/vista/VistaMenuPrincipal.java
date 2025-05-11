@@ -37,9 +37,10 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         btnHipotenusa = new javax.swing.JButton();
         btnMRU = new javax.swing.JButton();
         bntConversiones = new javax.swing.JButton();
+        btnTerceraLey = new javax.swing.JButton();
         btnPrimeraLey = new javax.swing.JButton();
-        btnPrimeraLey1 = new javax.swing.JButton();
-        btnPrimeraLey2 = new javax.swing.JButton();
+        btnSegundaLey = new javax.swing.JButton();
+        btnCerrarPrograma = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -83,26 +84,30 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         bntConversiones.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         bntConversiones.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
+        btnTerceraLey.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        btnTerceraLey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/newton.png"))); // NOI18N
+        btnTerceraLey.setText("3da Ley De Newton");
+        btnTerceraLey.setToolTipText("");
+        btnTerceraLey.setAlignmentX(0.5F);
+        btnTerceraLey.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
         btnPrimeraLey.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
-        btnPrimeraLey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/newton.png"))); // NOI18N
-        btnPrimeraLey.setText("3da Ley De Newton");
+        btnPrimeraLey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/isaac-newton3.png"))); // NOI18N
+        btnPrimeraLey.setText("1ra Ley De Newton");
         btnPrimeraLey.setToolTipText("");
         btnPrimeraLey.setAlignmentX(0.5F);
         btnPrimeraLey.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 
-        btnPrimeraLey1.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
-        btnPrimeraLey1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/isaac-newton3.png"))); // NOI18N
-        btnPrimeraLey1.setText("1ra Ley De Newton");
-        btnPrimeraLey1.setToolTipText("");
-        btnPrimeraLey1.setAlignmentX(0.5F);
-        btnPrimeraLey1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSegundaLey.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        btnSegundaLey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gravedad2.png"))); // NOI18N
+        btnSegundaLey.setText("2da Ley De Newton");
+        btnSegundaLey.setToolTipText("");
+        btnSegundaLey.setAlignmentX(0.5F);
+        btnSegundaLey.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 
-        btnPrimeraLey2.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
-        btnPrimeraLey2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gravedad2.png"))); // NOI18N
-        btnPrimeraLey2.setText("2da Ley De Newton");
-        btnPrimeraLey2.setToolTipText("");
-        btnPrimeraLey2.setAlignmentX(0.5F);
-        btnPrimeraLey2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnCerrarPrograma.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        btnCerrarPrograma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/salida.png"))); // NOI18N
+        btnCerrarPrograma.setText("Salir");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -119,9 +124,10 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
                             .addComponent(btnSumVectores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnPrimeraLey1, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE)
-                            .addComponent(btnPrimeraLey2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnPrimeraLey, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(btnPrimeraLey, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE)
+                            .addComponent(btnSegundaLey, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnTerceraLey, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCerrarPrograma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -133,18 +139,20 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSumVectores)
-                    .addComponent(btnPrimeraLey1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnPrimeraLey, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnHipotenusa)
-                    .addComponent(btnPrimeraLey2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnSegundaLey, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bntConversiones)
-                    .addComponent(btnPrimeraLey, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnTerceraLey, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnMRU)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnCerrarPrograma, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnMRU, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -204,12 +212,13 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton bntConversiones;
+    public javax.swing.JButton btnCerrarPrograma;
     public javax.swing.JButton btnHipotenusa;
     public javax.swing.JButton btnMRU;
     public javax.swing.JButton btnPrimeraLey;
-    public javax.swing.JButton btnPrimeraLey1;
-    public javax.swing.JButton btnPrimeraLey2;
+    public javax.swing.JButton btnSegundaLey;
     public javax.swing.JButton btnSumVectores;
+    public javax.swing.JButton btnTerceraLey;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
@@ -218,6 +227,9 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         btnHipotenusa.addActionListener(c);
         bntConversiones.addActionListener(c);
         btnMRU.addActionListener(c);
+        btnTerceraLey.addActionListener(c);
+        btnSegundaLey.addActionListener(c);
         btnPrimeraLey.addActionListener(c);
+        btnCerrarPrograma.addActionListener(c);
     }
 }
