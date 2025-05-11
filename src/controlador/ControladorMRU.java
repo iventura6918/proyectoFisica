@@ -43,21 +43,24 @@ public class ControladorMRU implements ActionListener {
         double distancia = Double.parseDouble(modeloMRU.getVistaMRU().txtDistaciaT.getText());
         double velocidad = Double.parseDouble(modeloMRU.getVistaMRU().txtVelocidadT.getText());
         double tiempo = distancia / velocidad;
-        modeloMRU.getVistaMRU().lblResultadoTiempo.setText(tiempo + " Segundos");
+        String tiempoF = String.format("%.2f", tiempo);
+        modeloMRU.getVistaMRU().lblResultadoTiempo.setText(tiempoF + " Segundos");
     }
 
     public void calculoDistancia() {
         double velocidad = Double.parseDouble(modeloMRU.getVistaMRU().txtVelocidadD.getText());
         double tiempo = Double.parseDouble(modeloMRU.getVistaMRU().txtTiempoD.getText());
         double distancia = velocidad * tiempo;
-        modeloMRU.getVistaMRU().lblResultadoDIstancia.setText(distancia + " Metros");
+        String distanciaF  = String.format("%.2f", distancia);
+        modeloMRU.getVistaMRU().lblResultadoDIstancia.setText(distanciaF + " Metros");
     }
 
     public void calculoVelocidad() {
         double distancia = Double.parseDouble(modeloMRU.getVistaMRU().txtDistanciaV.getText());
         double tiempo = Double.parseDouble(modeloMRU.getVistaMRU().txtTiempoV.getText());
         double velocidad = distancia / tiempo;
-        modeloMRU.getVistaMRU().lblResultadoVelocidad.setText(velocidad + " Metros/Segundos");
+        String velocidadF = String.format("%.2f", velocidad);
+        modeloMRU.getVistaMRU().lblResultadoVelocidad.setText(velocidadF + " Metros/Segundos");
     }
 
     public void verDialogoTiempo() {
