@@ -3,9 +3,13 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import modelo.ModeloMenuPrincipal;
 import vista.VIstaConversiones;
+import vista.VIstaMRU;
+import vista.VIstaSegundaLey;
 import vista.VistaCalculoHipotenusa;
+import vista.VistaPrimeraLey;
 import vista.VistaSumaVectores;
 
 
@@ -29,6 +33,18 @@ public class ControladorMenuprincipal implements ActionListener{
         if (e.getActionCommand().equals(modelomp.getVistamp().bntConversiones.getActionCommand())) {
             callVistaConversiones();
         }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnMRU.getActionCommand())) {
+            callVistaMRU();
+        }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnPrimeraLey.getActionCommand())) {
+            callVistaPL();
+        }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnSegundaLey.getActionCommand())) {
+            callVistaSL();
+        }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnCerrarPrograma.getActionCommand())) {
+            cerrarPrograma();
+        }
     }
     
     public void callVistaSumaVector(){
@@ -46,5 +62,24 @@ public class ControladorMenuprincipal implements ActionListener{
         vistaCon.setVisible(true);
         modelomp.getVistamp().dispose();
     }
-    
+    public void callVistaMRU(){
+        VIstaMRU vistaMRU = new VIstaMRU();
+        vistaMRU.setVisible(true);
+        modelomp.getVistamp().dispose();
+    }
+    public void callVistaPL(){
+        VistaPrimeraLey vistaPL = new VistaPrimeraLey();
+        vistaPL.setVisible(true);
+        modelomp.getVistamp().dispose();
+    }
+    public void callVistaSL(){
+        VIstaSegundaLey vistaSL = new VIstaSegundaLey();
+        vistaSL.setVisible(true);
+        modelomp.getVistamp().dispose();
+    }
+    public void cerrarPrograma(){
+        modelomp.getVistamp().dispose();
+        JOptionPane.showMessageDialog(null, "Gracias por utilizar este programa campeón!", "Atencion", 2);
+        System.exit(0);
+    }
 }
