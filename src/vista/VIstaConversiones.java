@@ -39,9 +39,44 @@ public class VIstaConversiones extends javax.swing.JFrame {
         txtMetros = new javax.swing.JTextField();
         btnCalcularCM = new javax.swing.JButton();
         lblResultadoCentimetros = new javax.swing.JLabel();
+        dialogoPulgadas = new javax.swing.JDialog();
+        txtPulgada = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        btnCalcularPulgada = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        lblResultadoPulgadas = new javax.swing.JLabel();
+        dialogoKmh = new javax.swing.JDialog();
+        txtKilometro = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        btnCalcularKmh = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        lblResultadoMps1 = new javax.swing.JLabel();
+        dialogoKilogramosALibras = new javax.swing.JDialog();
+        txtKilogramo = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        btnCalcularKilogramo = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        lblResultadoKilogramo = new javax.swing.JLabel();
+        dialogoCelsiusaFahrenheit = new javax.swing.JDialog();
+        txtCelsius = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        btnCalcularCelsius = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        lblResultadoCelsius = new javax.swing.JLabel();
+        dialogoLitrosAGalones = new javax.swing.JDialog();
+        txtLitros = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        btnCalcularLitros = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        lblResultadoLitros = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnMetrosaCm = new javax.swing.JButton();
+        btnKmhAMph = new javax.swing.JButton();
+        btnPulgasaCm1 = new javax.swing.JButton();
+        btnKgaLb = new javax.swing.JButton();
+        btnCelsiusaFahrenheit = new javax.swing.JButton();
+        btnLitrosAGalones = new javax.swing.JButton();
 
         jLabel5.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -101,6 +136,326 @@ public class VIstaConversiones extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        txtPulgada.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        txtPulgada.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPulgada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPulgadaActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Pulgadas a Centimetros");
+        jLabel6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnCalcularPulgada.setText("Calcular");
+        btnCalcularPulgada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularPulgadaActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
+        jLabel3.setText("Metros");
+
+        lblResultadoPulgadas.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        lblResultadoPulgadas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultadoPulgadas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout dialogoPulgadasLayout = new javax.swing.GroupLayout(dialogoPulgadas.getContentPane());
+        dialogoPulgadas.getContentPane().setLayout(dialogoPulgadasLayout);
+        dialogoPulgadasLayout.setHorizontalGroup(
+            dialogoPulgadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoPulgadasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dialogoPulgadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoPulgadasLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(dialogoPulgadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoPulgadasLayout.createSequentialGroup()
+                                .addComponent(txtPulgada, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnCalcularPulgada)
+                                .addGap(101, 101, 101))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoPulgadasLayout.createSequentialGroup()
+                                .addComponent(lblResultadoPulgadas, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82))))
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        dialogoPulgadasLayout.setVerticalGroup(
+            dialogoPulgadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoPulgadasLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(dialogoPulgadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtPulgada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalcularPulgada))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblResultadoPulgadas, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        txtKilometro.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        txtKilometro.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtKilometro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtKilometroActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Kilómetros por hora a Millas por hora");
+        jLabel7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnCalcularKmh.setText("Calcular");
+        btnCalcularKmh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularKmhActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
+        jLabel4.setText("km/h");
+
+        lblResultadoMps1.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        lblResultadoMps1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultadoMps1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout dialogoKmhLayout = new javax.swing.GroupLayout(dialogoKmh.getContentPane());
+        dialogoKmh.getContentPane().setLayout(dialogoKmhLayout);
+        dialogoKmhLayout.setHorizontalGroup(
+            dialogoKmhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoKmhLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dialogoKmhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoKmhLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(dialogoKmhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoKmhLayout.createSequentialGroup()
+                                .addComponent(txtKilometro, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnCalcularKmh)
+                                .addGap(101, 101, 101))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoKmhLayout.createSequentialGroup()
+                                .addComponent(lblResultadoMps1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82))))
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        dialogoKmhLayout.setVerticalGroup(
+            dialogoKmhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoKmhLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(dialogoKmhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtKilometro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalcularKmh))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblResultadoMps1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        txtKilogramo.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        txtKilogramo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtKilogramo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtKilogramoActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Kilogramos a Libras");
+        jLabel8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnCalcularKilogramo.setText("Calcular");
+        btnCalcularKilogramo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularKilogramoActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
+        jLabel9.setText("Kilogramos");
+
+        lblResultadoKilogramo.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        lblResultadoKilogramo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultadoKilogramo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout dialogoKilogramosALibrasLayout = new javax.swing.GroupLayout(dialogoKilogramosALibras.getContentPane());
+        dialogoKilogramosALibras.getContentPane().setLayout(dialogoKilogramosALibrasLayout);
+        dialogoKilogramosALibrasLayout.setHorizontalGroup(
+            dialogoKilogramosALibrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoKilogramosALibrasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dialogoKilogramosALibrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoKilogramosALibrasLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(dialogoKilogramosALibrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(dialogoKilogramosALibrasLayout.createSequentialGroup()
+                                .addComponent(lblResultadoKilogramo, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82))
+                            .addGroup(dialogoKilogramosALibrasLayout.createSequentialGroup()
+                                .addComponent(txtKilogramo, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(btnCalcularKilogramo)
+                                .addGap(50, 50, 50))))
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        dialogoKilogramosALibrasLayout.setVerticalGroup(
+            dialogoKilogramosALibrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoKilogramosALibrasLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(dialogoKilogramosALibrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(txtKilogramo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalcularKilogramo))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblResultadoKilogramo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        txtCelsius.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        txtCelsius.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtCelsius.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCelsiusActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("Celsius a Fahrenheit");
+        jLabel10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnCalcularCelsius.setText("Calcular");
+        btnCalcularCelsius.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularCelsiusActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
+        jLabel11.setText("celsius");
+
+        lblResultadoCelsius.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        lblResultadoCelsius.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultadoCelsius.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout dialogoCelsiusaFahrenheitLayout = new javax.swing.GroupLayout(dialogoCelsiusaFahrenheit.getContentPane());
+        dialogoCelsiusaFahrenheit.getContentPane().setLayout(dialogoCelsiusaFahrenheitLayout);
+        dialogoCelsiusaFahrenheitLayout.setHorizontalGroup(
+            dialogoCelsiusaFahrenheitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoCelsiusaFahrenheitLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dialogoCelsiusaFahrenheitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoCelsiusaFahrenheitLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(dialogoCelsiusaFahrenheitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoCelsiusaFahrenheitLayout.createSequentialGroup()
+                                .addComponent(lblResultadoCelsius, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoCelsiusaFahrenheitLayout.createSequentialGroup()
+                                .addComponent(txtCelsius, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(38, 38, 38)
+                                .addComponent(btnCalcularCelsius)
+                                .addGap(50, 50, 50))))))
+        );
+        dialogoCelsiusaFahrenheitLayout.setVerticalGroup(
+            dialogoCelsiusaFahrenheitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoCelsiusaFahrenheitLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(dialogoCelsiusaFahrenheitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(txtCelsius, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalcularCelsius))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblResultadoCelsius, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        txtLitros.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        txtLitros.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtLitros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLitrosActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Litros a Galones");
+        jLabel12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnCalcularLitros.setText("Calcular");
+        btnCalcularLitros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularLitrosActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
+        jLabel13.setText("litros");
+
+        lblResultadoLitros.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        lblResultadoLitros.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultadoLitros.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout dialogoLitrosAGalonesLayout = new javax.swing.GroupLayout(dialogoLitrosAGalones.getContentPane());
+        dialogoLitrosAGalones.getContentPane().setLayout(dialogoLitrosAGalonesLayout);
+        dialogoLitrosAGalonesLayout.setHorizontalGroup(
+            dialogoLitrosAGalonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoLitrosAGalonesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dialogoLitrosAGalonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoLitrosAGalonesLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(dialogoLitrosAGalonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoLitrosAGalonesLayout.createSequentialGroup()
+                                .addComponent(lblResultadoLitros, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dialogoLitrosAGalonesLayout.createSequentialGroup()
+                                .addComponent(txtLitros, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(38, 38, 38)
+                                .addComponent(btnCalcularLitros)
+                                .addGap(50, 50, 50))))))
+        );
+        dialogoLitrosAGalonesLayout.setVerticalGroup(
+            dialogoLitrosAGalonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoLitrosAGalonesLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(dialogoLitrosAGalonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(txtLitros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalcularLitros))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblResultadoLitros, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -110,10 +465,45 @@ public class VIstaConversiones extends javax.swing.JFrame {
         jLabel1.setText("CONVERSIONES");
         jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btnMetrosaCm.setText("Longitudes - Metros a Centimetros");
+        btnMetrosaCm.setText(" Metros a Centimetros");
         btnMetrosaCm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMetrosaCmActionPerformed(evt);
+            }
+        });
+
+        btnKmhAMph.setText("Kilómetros por hora a Millas por hora");
+        btnKmhAMph.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKmhAMphActionPerformed(evt);
+            }
+        });
+
+        btnPulgasaCm1.setText("Pulgadas a Centimetros");
+        btnPulgasaCm1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPulgasaCm1ActionPerformed(evt);
+            }
+        });
+
+        btnKgaLb.setText(" Kilogramos a Libras");
+        btnKgaLb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKgaLbActionPerformed(evt);
+            }
+        });
+
+        btnCelsiusaFahrenheit.setText("Celsius a Fahrenheit");
+        btnCelsiusaFahrenheit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCelsiusaFahrenheitActionPerformed(evt);
+            }
+        });
+
+        btnLitrosAGalones.setText("Litros a Galones");
+        btnLitrosAGalones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLitrosAGalonesActionPerformed(evt);
             }
         });
 
@@ -123,11 +513,20 @@ public class VIstaConversiones extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnMetrosaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnMetrosaCm, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnKmhAMph, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnKgaLb, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnPulgasaCm1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCelsiusaFahrenheit, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnLitrosAGalones, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -137,7 +536,17 @@ public class VIstaConversiones extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnMetrosaCm, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnPulgasaCm1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnKmhAMph, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnKgaLb, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCelsiusaFahrenheit, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnLitrosAGalones, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -167,6 +576,66 @@ public class VIstaConversiones extends javax.swing.JFrame {
     private void btnCalcularCMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularCMActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCalcularCMActionPerformed
+
+    private void btnKmhAMphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKmhAMphActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnKmhAMphActionPerformed
+
+    private void btnCalcularPulgadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularPulgadaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcularPulgadaActionPerformed
+
+    private void txtPulgadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPulgadaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPulgadaActionPerformed
+
+    private void btnPulgasaCm1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPulgasaCm1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPulgasaCm1ActionPerformed
+
+    private void txtKilometroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKilometroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtKilometroActionPerformed
+
+    private void btnCalcularKmhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularKmhActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcularKmhActionPerformed
+
+    private void btnKgaLbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKgaLbActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnKgaLbActionPerformed
+
+    private void txtKilogramoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKilogramoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtKilogramoActionPerformed
+
+    private void btnCalcularKilogramoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularKilogramoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcularKilogramoActionPerformed
+
+    private void txtCelsiusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCelsiusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCelsiusActionPerformed
+
+    private void btnCalcularCelsiusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularCelsiusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcularCelsiusActionPerformed
+
+    private void btnCelsiusaFahrenheitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCelsiusaFahrenheitActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCelsiusaFahrenheitActionPerformed
+
+    private void btnLitrosAGalonesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLitrosAGalonesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLitrosAGalonesActionPerformed
+
+    private void txtLitrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLitrosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLitrosActionPerformed
+
+    private void btnCalcularLitrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularLitrosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcularLitrosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,17 +674,62 @@ public class VIstaConversiones extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnCalcularCM;
+    public javax.swing.JButton btnCalcularCelsius;
+    public javax.swing.JButton btnCalcularKilogramo;
+    public javax.swing.JButton btnCalcularKmh;
+    public javax.swing.JButton btnCalcularLitros;
+    public javax.swing.JButton btnCalcularPulgada;
+    public javax.swing.JButton btnCelsiusaFahrenheit;
+    public javax.swing.JButton btnKgaLb;
+    public javax.swing.JButton btnKmhAMph;
+    public javax.swing.JButton btnLitrosAGalones;
     public javax.swing.JButton btnMetrosaCm;
+    public javax.swing.JButton btnPulgasaCm1;
+    public javax.swing.JDialog dialogoCelsiusaFahrenheit;
+    public javax.swing.JDialog dialogoKilogramosALibras;
+    public javax.swing.JDialog dialogoKmh;
+    public javax.swing.JDialog dialogoLitrosAGalones;
     public javax.swing.JDialog dialogoMetros;
+    public javax.swing.JDialog dialogoPulgadas;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    public javax.swing.JLabel lblResultadoCelsius;
     public javax.swing.JLabel lblResultadoCentimetros;
+    public javax.swing.JLabel lblResultadoKilogramo;
+    public javax.swing.JLabel lblResultadoLitros;
+    public javax.swing.JLabel lblResultadoMps1;
+    public javax.swing.JLabel lblResultadoPulgadas;
+    public javax.swing.JTextField txtCelsius;
+    public javax.swing.JTextField txtKilogramo;
+    public javax.swing.JTextField txtKilometro;
+    public javax.swing.JTextField txtLitros;
     public javax.swing.JTextField txtMetros;
+    public javax.swing.JTextField txtPulgada;
     // End of variables declaration//GEN-END:variables
-    public void setControlador(ControladorConversiones c){
+    public void setControlador(ControladorConversiones c) {
         btnMetrosaCm.addActionListener(c);
         btnCalcularCM.addActionListener(c);
+        btnPulgasaCm1.addActionListener(c);
+        btnCalcularPulgada.addActionListener(c);
+        btnKmhAMph.addActionListener(c);
+        btnCalcularKmh.addActionListener(c);
+        btnKgaLb.addActionListener(c);
+        btnCalcularKilogramo.addActionListener(c);
+        btnCelsiusaFahrenheit.addActionListener(c);
+        btnCalcularCelsius.addActionListener(c);
+        btnLitrosAGalones.addActionListener(c);
+        btnCalcularLitros.addActionListener(c);
     }
 }
