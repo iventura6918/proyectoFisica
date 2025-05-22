@@ -3,6 +3,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import modelo.ModeloMenuPrincipal;
 import vista.VIstaConversiones;
 import vista.VIstaMRU;
@@ -41,6 +42,9 @@ public class ControladorMenuprincipal implements ActionListener{
         if (e.getActionCommand().equals(modelomp.getVistamp().btnSegundaLey.getActionCommand())) {
             callVistaSL();
         }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnCerrarPrograma.getActionCommand())) {
+            cerrarPrograma();
+        }
     }
     
     public void callVistaSumaVector(){
@@ -72,5 +76,10 @@ public class ControladorMenuprincipal implements ActionListener{
         VIstaSegundaLey vistaSL = new VIstaSegundaLey();
         vistaSL.setVisible(true);
         modelomp.getVistamp().dispose();
+    }
+    public void cerrarPrograma(){
+        modelomp.getVistamp().dispose();
+        JOptionPane.showMessageDialog(null, "Gracias por utilizar este programa campeón!", "Atencion", 2);
+        System.exit(0);
     }
 }

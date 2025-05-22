@@ -60,7 +60,7 @@ public class ControladorMRU implements ActionListener {
         double tiempo = Double.parseDouble(modeloMRU.getVistaMRU().txtTiempoV.getText());
         double velocidad = distancia / tiempo;
         String velocidadF = String.format("%.2f", velocidad);
-        modeloMRU.getVistaMRU().lblResultadoVelocidad.setText(velocidadF + " Metros/Segundos");
+        modeloMRU.getVistaMRU().lblResultadoVelocidad.setText(velocidadF + " Metros/Segundo");
     }
 
     public void verDialogoTiempo() {

@@ -4,6 +4,9 @@
  */
 package vista;
 
+import controlador.ControladorSegundaLey;
+import modelo.ModeloSegundaLey;
+
 /**
  *
  * @author whiteHat
@@ -15,6 +18,10 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
      */
     public VIstaSegundaLey() {
         initComponents();
+        ModeloSegundaLey modelo = new ModeloSegundaLey(this);
+        ControladorSegundaLey controlador = new ControladorSegundaLey(modelo);
+        setControlador(controlador);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -39,6 +46,8 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
         btnCalcular = new javax.swing.JButton();
         btnAtras = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
+        lblAceleracion = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
@@ -56,8 +65,8 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Courier New", 1, 11)); // NOI18N
-        jTextArea1.setRows(3);
-        jTextArea1.setText("Calcula la aceleracion que tendra un objeto al aplicar\nuna fuerza horizonatal F, hayar la sumatoria de las\nfuerzas para ambos ejes (X,Y). ");
+        jTextArea1.setRows(2);
+        jTextArea1.setText("Calcula la aceleracion que tendra un objeto al aplicar\nuna fuerza horizonatal F.");
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel3.setFont(new java.awt.Font("Courier New", 1, 11)); // NOI18N
@@ -67,8 +76,10 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
         jLabel4.setText("Masa del Objeto:");
 
         txtFuerza.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        txtFuerza.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         txtMasa.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        txtMasa.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -79,11 +90,16 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
 
         btnAtras.setText("Atras");
 
-        jLabel2.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
-        jLabel2.setText("Aceleracion resultante: ");
+        lblAceleracion.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
+        lblAceleracion.setText("Aceleracion resultante: ");
 
-        jLabel5.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
-        jLabel5.setText("Aceleracion resultante: ");
+        lblResultado.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
+        lblResultado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultado.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel2.setText("N");
+
+        jLabel5.setText("Kg");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -95,8 +111,8 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
                     .addComponent(jSeparator2)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 375, Short.MAX_VALUE)
+                            .addComponent(lblAceleracion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -105,15 +121,26 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtFuerza)
-                                    .addComponent(txtMasa, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txtFuerza, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
+                                    .addComponent(txtMasa))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(btnCalcular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(btnAtras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(19, 19, 19))
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap())))
+                                .addGap(19, 19, 19)))
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,27 +148,30 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtFuerza, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCalcular))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnCalcular)
+                        .addComponent(jLabel2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtMasa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnAtras))
+                        .addComponent(btnAtras)
+                        .addComponent(jLabel5))
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addComponent(lblAceleracion)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+                .addGap(12, 12, 12))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -217,7 +247,13 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JToggleButton jToggleButton2;
+    public javax.swing.JLabel lblAceleracion;
+    public javax.swing.JLabel lblResultado;
     public javax.swing.JTextField txtFuerza;
     public javax.swing.JTextField txtMasa;
     // End of variables declaration//GEN-END:variables
+public void setControlador(ControladorSegundaLey c){
+    btnCalcular.addActionListener(c);
+    btnAtras.addActionListener(c);
+}
 }
