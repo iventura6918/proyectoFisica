@@ -4,8 +4,10 @@
  */
 package vista;
 
-import controlador.ControladorConversiones;
-import modelo.ModeloConversiones;
+
+import controlador.ControladorTerceraLey;
+
+import modelo.ModeloTerceraLey;            
 
 /**
  *
@@ -17,11 +19,11 @@ public class VistaTerceraLey extends javax.swing.JFrame {
      * Creates new form VIstaConversiones
      */
     public VistaTerceraLey() {
-       // initComponents();
-        //ModeloConversiones modelo = new ModeloConversiones(this);
-        //ControladorConversiones controlador = new ControladorConversiones(modelo);
-        //setControlador(controlador);
-       // setLocationRelativeTo(null);
+        initComponents();
+        ModeloTerceraLey modelo = new ModeloTerceraLey(this);
+        ControladorTerceraLey controlador = new ControladorTerceraLey(modelo);
+        setControlador(controlador); 
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -703,14 +705,14 @@ public class VistaTerceraLey extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCalcularAccionYReaccion;
+    public javax.swing.JButton btnCalcularAccionYReaccion;
     public javax.swing.JButton btnCalcularCM;
     public javax.swing.JButton btnCalcularCelsius;
     public javax.swing.JButton btnCalcularKilogramo;
     public javax.swing.JButton btnCalcularKmh;
     public javax.swing.JButton btnCalcularLitros;
     public javax.swing.JButton btnCalcularPulgada;
-    private javax.swing.JButton btnSalir;
+    public javax.swing.JButton btnSalir;
     public javax.swing.JDialog dialogoCelsiusaFahrenheit;
     public javax.swing.JDialog dialogoKilogramosALibras;
     public javax.swing.JDialog dialogoKmh;
@@ -756,7 +758,8 @@ public class VistaTerceraLey extends javax.swing.JFrame {
     public javax.swing.JTextField txtObjetoB;
     public javax.swing.JTextField txtPulgada;
     // End of variables declaration//GEN-END:variables
-    public void setControlador(ControladorConversiones c) {
-        
+    public void setControlador(ControladorTerceraLey c) {
+        btnCalcularAccionYReaccion.addActionListener(c);
+        btnSalir.addActionListener(c);
     }
 }
