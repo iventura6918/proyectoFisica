@@ -513,7 +513,8 @@ public class VistaTerceraLey extends javax.swing.JFrame {
             }
         });
 
-        lblResultadoAccionYReaccion.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        lblResultadoAccionYReaccion.setFont(new java.awt.Font("Courier New", 1, 11)); // NOI18N
+        lblResultadoAccionYReaccion.setText("   ");
         lblResultadoAccionYReaccion.setToolTipText("");
         lblResultadoAccionYReaccion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
