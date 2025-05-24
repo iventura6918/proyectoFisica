@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JDialog;
 import modelo.ModeloConversiones;
+import vista.VistaMenuPrincipal;
 
 public class ControladorConversiones implements ActionListener {
 
@@ -53,6 +54,9 @@ public class ControladorConversiones implements ActionListener {
             verDialogoLitrosAGalones();
         } else if (e.getSource() == modeloCon.getVistaCon().btnCalcularLitros) {
             calculoLitrosAGalones();
+        }
+        else if (e.getSource() == modeloCon.getVistaCon().btnSalir) {
+            atras();
         }
     }
 
@@ -150,5 +154,10 @@ public class ControladorConversiones implements ActionListener {
         double litros = Double.parseDouble(modeloCon.getVistaCon().txtLitros.getText());
         double conversion = litros / 3.78541;
         modeloCon.getVistaCon().lblResultadoLitros.setText(String.format("%.2f gal", conversion));
+    }
+    public void atras(){
+        VistaMenuPrincipal vistam = new VistaMenuPrincipal();
+        vistam.setVisible(true);
+        modeloCon.getVistaCon().dispose();
     }
 }

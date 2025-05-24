@@ -33,7 +33,10 @@ public class ControladorTerceraLey implements ActionListener {
 
         // Obtener la dirección ingresada
         String direccion = modeloTL.getVistaTL().txtDirección.getSelectedItem().toString();
-
+        // Obtener objeto A
+        String objetoA = modeloTL.getVistaTL().txtObjetoA.getText();
+        // Obtener objeto B
+        String objetoB = modeloTL.getVistaTL().txtObjetoB.getText();
         // Calcular la dirección opuesta
         String direccionOpuesta = "";
         switch (direccion.toLowerCase()) {
@@ -55,7 +58,8 @@ public class ControladorTerceraLey implements ActionListener {
         }
 
         // Mostrar el resultado
-        String resultado = "Fuerza de reacción: " + fuerza + " N hacia " + direccionOpuesta;
+      //  String resultado = "Fuerza de reacción: " + fuerza + " N hacia " + direccionOpuesta;
+        String resultado = objetoB + " ejerce una fuerza de " + fuerza + " N hacia la " + direccionOpuesta + " sobre " + objetoA;
         modeloTL.getVistaTL().lblResultadoAccionYReaccion.setText(resultado);
     }
 
