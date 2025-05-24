@@ -478,7 +478,6 @@ public class VistaTerceraLey extends javax.swing.JFrame {
         jLabel1.setToolTipText("");
         jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Courier New", 1, 11)); // NOI18N
         jTextArea2.setRows(2);
@@ -513,8 +512,7 @@ public class VistaTerceraLey extends javax.swing.JFrame {
             }
         });
 
-        lblResultadoAccionYReaccion.setFont(new java.awt.Font("Courier New", 1, 11)); // NOI18N
-        lblResultadoAccionYReaccion.setText("   ");
+        lblResultadoAccionYReaccion.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         lblResultadoAccionYReaccion.setToolTipText("");
         lblResultadoAccionYReaccion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
