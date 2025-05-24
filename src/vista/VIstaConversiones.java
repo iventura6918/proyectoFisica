@@ -77,6 +77,7 @@ public class VIstaConversiones extends javax.swing.JFrame {
         btnKgaLb = new javax.swing.JButton();
         btnCelsiusaFahrenheit = new javax.swing.JButton();
         btnLitrosAGalones = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
 
         jLabel5.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -507,6 +508,13 @@ public class VIstaConversiones extends javax.swing.JFrame {
             }
         });
 
+        btnSalir.setText("Regresar");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -528,6 +536,10 @@ public class VIstaConversiones extends javax.swing.JFrame {
                             .addComponent(btnLitrosAGalones, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -546,6 +558,8 @@ public class VIstaConversiones extends javax.swing.JFrame {
                 .addComponent(btnCelsiusaFahrenheit, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnLitrosAGalones, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
@@ -637,6 +651,10 @@ public class VIstaConversiones extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCalcularLitrosActionPerformed
 
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -685,6 +703,7 @@ public class VIstaConversiones extends javax.swing.JFrame {
     public javax.swing.JButton btnLitrosAGalones;
     public javax.swing.JButton btnMetrosaCm;
     public javax.swing.JButton btnPulgasaCm1;
+    public javax.swing.JButton btnSalir;
     public javax.swing.JDialog dialogoCelsiusaFahrenheit;
     public javax.swing.JDialog dialogoKilogramosALibras;
     public javax.swing.JDialog dialogoKmh;
@@ -731,5 +750,6 @@ public class VIstaConversiones extends javax.swing.JFrame {
         btnCalcularCelsius.addActionListener(c);
         btnLitrosAGalones.addActionListener(c);
         btnCalcularLitros.addActionListener(c);
+        btnSalir.addActionListener(c);
     }
 }
