@@ -84,7 +84,7 @@ public class VistaPrimeraLey extends javax.swing.JFrame {
         lblTension.setText("Tension de la cuerda (T):");
 
         lblSumatoria.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
-        lblSumatoria.setText("Sumatoria de las Fuerzas: ");
+        lblSumatoria.setText("Estado:");
 
         btnAtras.setText("Atras");
 
@@ -144,7 +144,7 @@ public class VistaPrimeraLey extends javax.swing.JFrame {
                 .addComponent(lblTension)
                 .addGap(18, 18, 18)
                 .addComponent(lblSumatoria)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

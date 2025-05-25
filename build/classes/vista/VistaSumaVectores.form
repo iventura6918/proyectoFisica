@@ -89,7 +89,7 @@
                                           <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace min="115" max="32767" attributes="0"/>
+                                  <EmptySpace min="115" pref="95" max="32767" attributes="0"/>
                                   <Component id="bntAtras" min="-2" pref="169" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -145,16 +145,15 @@
                               <Component id="jLabel8" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                               <Component id="jLabel9" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="lblResultadoSuma" min="-2" pref="87" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="bntAtras" min="-2" pref="45" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
+                  <Component id="lblResultadoSuma" min="-2" pref="92" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">

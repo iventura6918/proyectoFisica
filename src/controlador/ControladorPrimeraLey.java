@@ -39,7 +39,8 @@ public class ControladorPrimeraLey implements ActionListener{
         
         modeloPL.getVistaPL().lblPeso.setText("Peso del Objeto (W): "+ pesoF + " N");
         modeloPL.getVistaPL().lblTension.setText("Tension de la cuerda (T): " + tensionF + " N");
-        modeloPL.getVistaPL().lblSumatoria.setText("Sumatoria de las Fuerzas: " + sumatoria + " N");
+        //modeloPL.getVistaPL().lblSumatoria.setText("Sumatoria de las Fuerzas: " + sumatoria + " N");
+        modeloPL.getVistaPL().lblSumatoria.setText("Objeto en reposo");
     }
     
     public void atras(){
