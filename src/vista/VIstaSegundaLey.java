@@ -77,6 +77,11 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
 
         txtFuerza.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
         txtFuerza.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtFuerza.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFuerzaActionPerformed(evt);
+            }
+        });
 
         txtMasa.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
         txtMasa.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -197,6 +202,10 @@ public class VIstaSegundaLey extends javax.swing.JFrame {
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void txtFuerzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFuerzaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFuerzaActionPerformed
 
     /**
      * @param args the command line arguments

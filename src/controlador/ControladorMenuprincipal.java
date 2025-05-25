@@ -10,6 +10,7 @@ import vista.VIstaMRU;
 import vista.VIstaSegundaLey;
 import vista.VistaCalculoHipotenusa;
 import vista.VistaPrimeraLey;
+import vista.VistaSegundaLey1;
 import vista.VistaSumaVectores;
 
 
@@ -39,8 +40,11 @@ public class ControladorMenuprincipal implements ActionListener{
         if (e.getActionCommand().equals(modelomp.getVistamp().btnPrimeraLey.getActionCommand())) {
             callVistaPL();
         }
-        if (e.getActionCommand().equals(modelomp.getVistamp().btnSegundaLey.getActionCommand())) {
+        /*if (e.getActionCommand().equals(modelomp.getVistamp().btnSegundaLey.getActionCommand())) {
             callVistaSL();
+        }*/
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnSegundaLey.getActionCommand())) {
+            callVistaSLD ();
         }
         if (e.getActionCommand().equals(modelomp.getVistamp().btnCerrarPrograma.getActionCommand())) {
             cerrarPrograma();
@@ -72,9 +76,14 @@ public class ControladorMenuprincipal implements ActionListener{
         vistaPL.setVisible(true);
         modelomp.getVistamp().dispose();
     }
-    public void callVistaSL(){
+   /* public void callVistaSL(){
         VIstaSegundaLey vistaSL = new VIstaSegundaLey();
         vistaSL.setVisible(true);
+        modelomp.getVistamp().dispose();
+    }*/
+    public void callVistaSLD(){
+        VistaSegundaLey1 vistaSL1 = new VistaSegundaLey1();
+        vistaSL1.setVisible(true);
         modelomp.getVistamp().dispose();
     }
     public void cerrarPrograma(){
