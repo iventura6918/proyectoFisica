@@ -159,7 +159,7 @@ public class VIstaConversiones extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
-        jLabel3.setText("Metros");
+        jLabel3.setText("Pul");
 
         lblResultadoPulgadas.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         lblResultadoPulgadas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

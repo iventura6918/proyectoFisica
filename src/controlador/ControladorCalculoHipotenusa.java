@@ -36,10 +36,19 @@ public class ControladorCalculoHipotenusa implements ActionListener {
                 String resultRedondeado = String.format("%.2f", result);
 
                 modelohipo.getVistaHipo().lblResultado.setText(resultRedondeado + " Metros");
+            } else if (modelohipo.getVistaHipo().rbOpcion2.isSelected()) {
+                double ladoA = Double.parseDouble(modelohipo.getVistaHipo().txtLadoA.getText());
+                double ladoH = Double.parseDouble(modelohipo.getVistaHipo().txtLadoH.getText());
+                double result = calculoUnLadoHipotenusa(ladoA, ladoH);
+                String resultRedondeado = String.format("%.2f", result);
+
+                modelohipo.getVistaHipo().lblResultado.setText(resultRedondeado + " Metros");
+            } 
+                
             }
 
         }
-    }
+    
 
     public void atras() {
         VistaMenuPrincipal vistam = new VistaMenuPrincipal();
@@ -53,5 +62,12 @@ public class ControladorCalculoHipotenusa implements ActionListener {
 
         return h;
     }
+    public double calculoUnLadoHipotenusa(double a, double h) {
+        double b;
+        b = Math.sqrt(Math.pow(a, 2) - Math.pow(h, 2));
 
+        return b;
+    }
 }
+
+

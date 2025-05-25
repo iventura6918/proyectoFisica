@@ -86,10 +86,15 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
         btnTerceraLey.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         btnTerceraLey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/newton.png"))); // NOI18N
-        btnTerceraLey.setText("3da Ley De Newton");
+        btnTerceraLey.setText("3ra Ley De Newton");
         btnTerceraLey.setToolTipText("");
         btnTerceraLey.setAlignmentX(0.5F);
         btnTerceraLey.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnTerceraLey.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTerceraLeyActionPerformed(evt);
+            }
+        });
 
         btnPrimeraLey.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         btnPrimeraLey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/isaac-newton3.png"))); // NOI18N
@@ -124,7 +129,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
                             .addComponent(btnSumVectores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnPrimeraLey, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE)
+                            .addComponent(btnPrimeraLey, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnSegundaLey, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnTerceraLey, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnCerrarPrograma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -174,6 +179,10 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnTerceraLeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTerceraLeyActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTerceraLeyActionPerformed
 
     /**
      * @param args the command line arguments

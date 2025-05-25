@@ -442,7 +442,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel20">
           <Properties>
-            <Property name="text" type="java.lang.String" value="k/m&quot;"/>
+            <Property name="text" type="java.lang.String" value="m/s&quot;"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblCMresultado1">
@@ -595,6 +595,7 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="jTextArea1">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>

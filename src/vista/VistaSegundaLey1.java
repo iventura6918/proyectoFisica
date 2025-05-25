@@ -282,7 +282,7 @@ public class VistaSegundaLey1 extends javax.swing.JFrame {
 
         jLabel19.setText("N");
 
-        jLabel20.setText("k/m\"");
+        jLabel20.setText("m/s\"");
 
         javax.swing.GroupLayout dialogoMasaLayout = new javax.swing.GroupLayout(dialogoMasa.getContentPane());
         dialogoMasa.getContentPane().setLayout(dialogoMasaLayout);
@@ -370,6 +370,7 @@ public class VistaSegundaLey1 extends javax.swing.JFrame {
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
         jScrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
