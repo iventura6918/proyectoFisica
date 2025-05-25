@@ -63,7 +63,7 @@ public class ControladorCalculoHipotenusa implements ActionListener {
 
     public double calculoUnLadoHipotenusa(double a, double h) {
         double b;
-        b = Math.sqrt(Math.pow(a, 2) - Math.pow(h, 2));
+        b = Math.sqrt(Math.pow(h, 2) - Math.pow(a, 2));
 
         return b;
     }
