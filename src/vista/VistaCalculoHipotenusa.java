@@ -93,6 +93,11 @@ public class VistaCalculoHipotenusa extends javax.swing.JFrame {
 
         txtLadoH.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         txtLadoH.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtLadoH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLadoHActionPerformed(evt);
+            }
+        });
 
         jLabel8.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
         jLabel8.setText("metros");
@@ -105,9 +110,19 @@ public class VistaCalculoHipotenusa extends javax.swing.JFrame {
         btnCalcular.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
         btnCalcular.setText("Calcular");
         btnCalcular.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
 
         btnAtras.setFont(new java.awt.Font("Courier New", 1, 12)); // NOI18N
         btnAtras.setText("Atras");
+        btnAtras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -205,6 +220,18 @@ public class VistaCalculoHipotenusa extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAtrasActionPerformed
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void txtLadoHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLadoHActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLadoHActionPerformed
 
     /**
      * @param args the command line arguments
