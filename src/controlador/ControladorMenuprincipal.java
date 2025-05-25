@@ -12,6 +12,7 @@ import vista.VistaCalculoHipotenusa;
 import vista.VistaPrimeraLey;
 import vista.VistaSegundaLey1;
 import vista.VistaSumaVectores;
+import vista.VistaTerceraLey;
 
 
 public class ControladorMenuprincipal implements ActionListener{
@@ -48,6 +49,9 @@ public class ControladorMenuprincipal implements ActionListener{
         }
         if (e.getActionCommand().equals(modelomp.getVistamp().btnCerrarPrograma.getActionCommand())) {
             cerrarPrograma();
+        }
+        if (e.getActionCommand().equals(modelomp.getVistamp().btnTerceraLey.getActionCommand())) {
+            callVistaTL();
         }
     }
     
@@ -86,9 +90,15 @@ public class ControladorMenuprincipal implements ActionListener{
         vistaSL1.setVisible(true);
         modelomp.getVistamp().dispose();
     }
+    public void callVistaTL(){
+        VistaTerceraLey vistaTL = new VistaTerceraLey();
+        vistaTL.setVisible(true);
+        modelomp.getVistamp().dispose();
+    }
     public void cerrarPrograma(){
         modelomp.getVistamp().dispose();
         JOptionPane.showMessageDialog(null, "Gracias por utilizar este programa campeón!", "Atencion", 2);
         System.exit(0);
-    }
+    } 
+    
 }

@@ -2,5 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/modelo/ModeloMenuPrincipal.java</file>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/modelo/ModeloSumaVectores.java</file>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/vista/VistaCalculoHipotenusa.java</file>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/controlador/ControladorMenuprincipal.java</file>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/controlador/ControladorCalculoHipotenusa.java</file>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/vista/VistaSumaVectores.java</file>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/controlador/ControladorTerceraLey.java</file>
+            <file>file:/C:/Users/danie/Documents/GitHub/proyectoFisica/src/controlador/ControladorSumaVectores.java</file>
+        </group>
     </open-files>
 </project-private>
