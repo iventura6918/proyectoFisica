@@ -697,6 +697,7 @@
         </Component>
       </SubComponents>
     </Container>
+
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -730,9 +731,14 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
+
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+
           </Group>
       </Group>
     </DimensionLayout>
@@ -751,6 +757,22 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+
+                  <EmptySpace min="0" pref="48" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                          <Component id="btnLitrosAGalones" min="-2" pref="291" max="-2" attributes="0"/>
+                          <Component id="btnCelsiusaFahrenheit" min="-2" pref="291" max="-2" attributes="0"/>
+                          <Component id="btnKgaLb" min="-2" pref="291" max="-2" attributes="0"/>
+                          <Component id="btnKmhAMph" min="-2" pref="291" max="-2" attributes="0"/>
+                          <Component id="btnPulgasaCm1" min="-2" pref="291" max="-2" attributes="0"/>
+                          <Component id="btnMetrosaCm" min="-2" pref="291" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="291" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="btnSalir" alignment="1" min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
@@ -772,12 +794,31 @@
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnMetrosaCm" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnPulgasaCm1" min="-2" pref="26" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnKmhAMph" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnKgaLb" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnCelsiusaFahrenheit" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnLitrosAGalones" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btnSalir" pref="29" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" pref="45" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -793,6 +834,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnLitrosAGalones" min="-2" pref="56" max="-2" attributes="0"/>
                   <EmptySpace pref="12" max="32767" attributes="0"/>
+
               </Group>
           </Group>
         </DimensionLayout>
@@ -878,6 +920,19 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
+
+        <Component class="javax.swing.JButton" name="btnSalir">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atras"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+
       </SubComponents>
     </Container>
   </SubComponents>
